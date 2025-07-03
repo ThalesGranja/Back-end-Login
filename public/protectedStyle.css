@@ -26,6 +26,7 @@ nav a:hover {
 }
 
 nav a.logout {
+    float:right;
     color: #d62828;
 }
 
