@@ -1,0 +1,25 @@
+/* Estilo base dos botões */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover (passar o mouse por cima) */
+button:hover {
+    background-color: #024fa0;
+    transform: scale(1.05);
+}
+
+/* Botão de sair (opcional: se quiser aplicar cor diferente no botão "Sair" da navbar) */
+nav a.logout {
+    color: #d62828 !important;
+}

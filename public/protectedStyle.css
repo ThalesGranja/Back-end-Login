@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    margin-bottom: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0366d6;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #023e8a;
+}
+
+nav a.logout {
+    color: #d62828;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+#datetime {
+    font-weight: bold;
+    color: #555;
+}
+
+blockquote {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #ddd;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0366d6;
+}
+
+/* Estilo base dos botões */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover (passar o mouse por cima) */
+button:hover {
+    background-color: #024fa0;
+    transform: scale(1.05);
+}
+
+/* Botão de sair (opcional: se quiser aplicar cor diferente no botão "Sair" da navbar) */
+nav a.logout {
+    color: #d62828 !important;
+}

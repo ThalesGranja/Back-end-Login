@@ -1,0 +1,61 @@
+/* Estilo geral */
+body {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container do formulário */
+form {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs e botão */
+input {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #74ebd5;
+  outline: none;
+  box-shadow: 0 0 5px rgba(116, 235, 213, 0.5);
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #74ebd5;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5fd0c4;
+}

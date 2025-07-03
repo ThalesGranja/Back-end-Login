@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Página Protegida</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/protectedStyle.css" />
 </head>
+
 <body>
-  <h2>Bem-vindo à página protegida!</h2>
-  <a href="/logout">Sair</a>
+
+  <nav>
+    <a href="#">Painel</a>
+    <a href="#">Configurações</a>
+    <a href="/logout" class="logout">Sair</a>
+  </nav>
+
+  <h2>Bem-vindo, <span id="userEmail">usuário</span>!</h2>
+  <p>Data e hora atual: <span id="datetime"></span></p>
+
+  <blockquote>
+    "A persistência é o caminho do êxito." – Charles Chaplin
+  </blockquote>
+
+  <div style="display: flex; align-items: center; gap: 20px; margin-top: 40px;">
+    <img src="/images/orangotango_askingfood.jpg" alt="orangotango_askingfood" width="400" />
+    <div>
+      <h3>Nosso trabalho merece uma nota 10?</h3>
+      <button onclick="window.location.href='/sim'">Sim</button>
+      <button onclick="window.location.href='/nao'">Não</button>
+    </div>
+  </div>
+
+
+  <script>
+    // Função para pegar cookies em formato de objeto
+    function getCookies() {
+      return document.cookie.split(';').reduce((cookies, cookie) => {
+        const [name, value] = cookie.trim().split('=');
+        cookies[name] = decodeURIComponent(value);
+        return cookies;
+      }, {});
+    }
+
+    // Exibe o e-mail armazenado no cookie 'userEmail'
+    const cookies = getCookies();
+    if (cookies.userEmail) {
+      document.getElementById('userEmail').textContent = cookies.userEmail;
+    }
+
+    // Atualiza a data e hora a cada segundo
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById('datetime').textContent = now.toLocaleString('pt-BR');
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+
 </body>
+
 </html>
