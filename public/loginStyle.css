@@ -1,4 +1,3 @@
-/* Estilo geral */
 body {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,7 +10,6 @@ body {
   align-items: center;
 }
 
-/* Container do formulário */
 form {
   background: #ffffff;
   padding: 40px 30px;
@@ -22,13 +20,11 @@ form {
   flex-direction: column;
 }
 
-/* Título */
 h2 {
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Inputs e botão */
 input {
   margin: 10px 0;
   padding: 12px;
