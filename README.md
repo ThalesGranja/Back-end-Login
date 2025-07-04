@@ -2,10 +2,10 @@
 
 ## Alunos:
 
--Carlos Eduardo Pires de Santana Hereman
--Letícia Marchioni
--Luccas Hessel
--Thales Heron de Assunção Granja
+-Carlos Eduardo Pires de Santana Hereman\
+-Letícia Marchioni\
+-Luccas Hessel\
+-Thales Heron de Assunção Granja\
 
 Este repositório contém o código-fonte de um sistema de login back-end.
 
