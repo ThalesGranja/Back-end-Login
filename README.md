@@ -48,8 +48,8 @@ O servidor estará rodando em `http://localhost:3000` (ou na porta configurada n
 
 Utilize as seguintes credenciais para testar o login:
 
-- **E-mail:** `teste@email.com`
-- **Senha:** `123456`
+- **E-mail:** `teste2@email.com`
+- **Senha:** `121212`
 
 ## Estrutura do Projeto
 
